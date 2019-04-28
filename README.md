@@ -1,5 +1,5 @@
 # simple-webpack-boilerplate
-basic webpack 4 boilerplate 
+basic webpack 4 boilerplate with sass
 
 
 Change webpack.config.js mode(development and production)
