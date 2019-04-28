@@ -1,0 +1,75 @@
+//
+//
+//  Fonts
+// ---------------------------------------------------------
+//
+//  Theme fonts file
+//
+// -----------------------------------------------------
+
+
+//custom fonts
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,700|Source+Sans+Pro:300,700,700italic,900,300italic,900italic);
+@include font-face(GTAmericaMonoTrial-Regular, normal, normal, ttf woff woff2 eot);
+
+// font variables
+$sans: "Source Sans Pro", "HelveticaNeueLTPro-Lt", "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+$sans-alt: "Poppins", "HelveticaNeueLTPro-Bd","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+$serif: "Merriweather", Georgia, Times, serif;
+$serif-alt: Times, serif;
+$custom-font: "GTAmericaMonoTrial-Regular", "HelveticaNeueLTPro-Lt", "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;;
+
+//Font sizes
+$fs__xlg: 70;
+$fs__xlg-m: 34;
+$fs__lg: 28;
+$fs__lg-m: 20;
+$fs__md: 18;
+$fs__md-m: 15;
+$fs__sm: 16;
+$fs__sm-m: 14;
+$fs__xsm: 14;
+$fs__xsm-m: 13;
+
+%fs__xlg{
+    @include fp(font-size,$fs__xlg-m,$fs__xlg);
+}
+%fs__lg{
+    @include fp(font-size,$fs__lg-m,$fs__lg);
+}
+%fs__md{
+    @include fp(font-size,$fs__md-m,$fs__md);
+}
+%fs__sm{
+    @include fp(font-size,$fs__sm-m,$fs__sm);
+}
+%fs__xsm{
+    @include fp(font-size,$fs__xsm-m,$fs__xsm);
+}
+
+
+// font classes
+%font-style__sans-rg {
+  font-family: $sans;
+  font-weight: 400;
+}
+%font-style__serif-bd {
+  font-family: $serif;
+  font-weight: 700;
+}
+%font-style__sans-md {
+  font-family: $sans;
+  font-weight: 500;
+}
+%font-style__sans-bd {
+  font-family: $sans;
+  font-weight: 700;
+}
+%font-style__custom-rg {
+  font-family: $custom-font;
+  font-weight: normal;
+}
+
+
+
+

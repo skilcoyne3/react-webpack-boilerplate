@@ -1,0 +1,62 @@
+//
+//
+//  Styles.scss
+// ---------------------------------------------------------
+//
+//  Main styles file
+//
+// -----------------------------------------------------
+
+@import 'mixins';
+@import 'vars';
+@import 'fonts';
+
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+  position: inherit;
+  backface-visibility: hidden;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+body {
+  background: $color__white;
+  #hello {
+    display: flex;
+    align-items: center;
+    color: $color__accent;
+    @include fp(font-size,18,40);
+    text-transform: uppercase;
+    @extend %font-style__custom-rg;
+    &:after {
+      @include content-absolute(true,left,top);
+      position: relative;
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+      background: url($bg-webpack) center/cover no-repeat;
+    }
+  }
+  @include bp-down(lg) {
+    .wrapper {
+      text-align: center;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      img {
+        margin: 0 auto;
+      }
+      #hello {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+}
