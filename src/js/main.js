@@ -1,8 +1,8 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
 
-let hello = document.getElementById("hello");
-hello.innerHTML = "Hello from Webpack!";
-
-const appName = 'Webpack Demo App';
-setTimeout(
-  () => alert(`Thanks for using ${appName}`)
-, 500);
+ReactDOM.render(
+  <App name="App" />,
+  document.getElementById('hello')
+);
